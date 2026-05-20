@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero-graphic.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -127,9 +127,9 @@ function Index() {
               ))}
             </div>
           </div>
-          <div className="relative">
+          <div className="relative flex justify-center">
             <div className="absolute -inset-4 bg-gradient-brand opacity-20 blur-3xl rounded-full" />
-            <img src={hero} alt="Design workspace" width={1280} height={896} className="relative rounded-2xl shadow-card border border-border" />
+            <img src={hero} alt="Majeedi Graphics — Graphic Design Services" width={1080} height={1080} className="relative w-full max-w-lg h-auto rounded-2xl shadow-card border border-border object-contain bg-white" />
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-card hidden sm:block">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-brand grid place-items-center text-brand-foreground"><Award className="w-5 h-5"/></div>
